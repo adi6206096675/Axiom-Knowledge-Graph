@@ -29,3 +29,33 @@ Axiom implements an asynchronous **producer-consumer backpressure model** design
                                                                                                            │    Qdrant Vault     │
                                                                                                            │ (1M+ Verified Facts)│
                                                                                                            └─────────────────────┘
+
+Core Components
+The Ingestion Spider (arom-spider/): A high-concurrency multi-threaded web and data spider written in Rust capable of saturating network I/O while filtering out non-text/binary payloads.
+
+The Shock Absorber (Redis): Configured with strict memory bounds (--maxmemory 2gb --maxmemory-policy noeviction) to safely buffer incoming data streams without risking system out-of-memory (OOM) crashes.
+
+The AI Refinery (arom_refinery.py): A Python pipeline utilizing FastEmbed and local transformer architectures to process chunks and calculate high-dimensional dense vectors (text_dense and clip_multimodal).
+
+The Retrieval Core (Qdrant): A high-speed vector index storing over 1,000,000 domain-specific facts, enabling semantic conceptual matching rather than basic keyword lookups.
+
+ Key Engineering Features
+Zero Cloud Dependency: Completely self-hosted, running locally with zero commercial API rate limits or recurring costs.
+
+Crash Immunity & Backpressure Regulation: Automatically balances producer velocity against consumer math processing speed.
+
+Hybrid Multimodal Search: Indexes text and semantic features concurrently for cross-modal search queries.
+
+📂 Repository Structure
+Code snippet
+Axiom-Knowledge-Graph/
+├── arom-spider/             # High-performance Rust crawler engine
+│   ├── src/                 # Spider core logic and threading models
+│   ├── Cargo.toml           # Rust dependencies and configuration
+│   └── Cargo.lock           
+├── arom_refinery.py         # Python AI vectorization and Qdrant sync pipeline
+├── main.py                  # Core system orchestrator
+├── axiom_dashboard.py       # Live telemetry and pipeline dashboard
+├── axiom_ui.py              # User-facing search interface gateway
+├── hydrate_db.py            # Initial storage loader and schema migrator
+└── .gitignore               # Production-grade exclusion rules (hides storage/caches)
