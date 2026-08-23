@@ -1,0 +1,61 @@
+# ==========================================
+# IDEs & Editor Servers (Windsurf, Cursor, VS Code)
+# ==========================================
+.vscode/
+.vscode-server/
+.cursor-server/
+.windsurf-server/
+.idea/
+.lightning_studio/
+*.swp
+*.swo
+.DS_Store
+
+# ==========================================
+# Environments, Caches & Toolchains
+# ==========================================
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.cache/
+.cargo/
+.rustup/
+.local/
+.nvm/
+.oh-my-zsh/
+.ipython/
+.jupyter/
+.streamlit/
+.docker/
+.ssh/
+
+# ==========================================
+# Database & Vector Storage (DO NOT UPLOAD)
+# ==========================================
+storage/
+data/
+temp/
+dump.rdb
+*.db
+*.sqlite
+
+# ==========================================
+# Rust Build Artifacts
+# ==========================================
+arom-spider/target/
+target/
+
+# ==========================================
+# Logs, State Files & Downloaded Binaries
+# ==========================================
+*.log
+*.json
+*.deb
+*.tgz
+ngrok
+cloudflared-*
+.env
+qdrant-initialized
