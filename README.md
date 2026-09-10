@@ -12,6 +12,21 @@
 
 ---
 
+
+## Citation
+
+If you utilize Axiom or its deterministic retrieval architecture in your research, please cite:
+
+```bibtex
+@article{aditya2026axiom,
+  author = {Aditya "Aadi"},
+  title = {AXIOM: A Sovereign, Deterministic, and Multi-Modal Search Engine Architecture},
+  year = {2026},
+  publisher = {Figshare},
+  doi = {10.6084/m9.figshare.33514507},
+  url = {[https://doi.org/10.6084/m9.figshare.33514507](https://doi.org/10.6084/m9.figshare.33514507)}
+}
+
 ## 🏗️ System Architecture
 
 Axiom implements an asynchronous **producer-consumer backpressure model** designed for extreme stability, high throughput, and memory safety on local or constrained infrastructure:
@@ -61,17 +76,5 @@ Axiom-Knowledge-Graph/
 ├── hydrate_db.py            # Initial storage loader and schema migrator
 └── .gitignore               # Production-grade exclusion rules (hides storage/caches)
 
-
-## Citation
-
-If you utilize Axiom or its deterministic retrieval architecture in your research, please cite:
-
-```bibtex
-@article{aditya2026axiom,
-  author = {Aditya "Aadi"},
-  title = {AXIOM: A Sovereign, Deterministic, and Multi-Modal Search Engine Architecture},
-  year = {2026},
-  publisher = {Figshare},
-  doi = {10.6084/m9.figshare.33514507},
-  url = {[https://doi.org/10.6084/m9.figshare.33514507](https://doi.org/10.6084/m9.figshare.33514507)}
+.figshare.33514507](https://doi.org/10.6084/m9.figshare.33514507)}
 }
