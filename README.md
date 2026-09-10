@@ -60,3 +60,18 @@ Axiom-Knowledge-Graph/
 ├── axiom_ui.py              # User-facing search interface gateway
 ├── hydrate_db.py            # Initial storage loader and schema migrator
 └── .gitignore               # Production-grade exclusion rules (hides storage/caches)
+
+
+## Citation
+
+If you utilize Axiom or its deterministic retrieval architecture in your research, please cite:
+
+```bibtex
+@article{aditya2026axiom,
+  author = {Aditya "Aadi"},
+  title = {AXIOM: A Sovereign, Deterministic, and Multi-Modal Search Engine Architecture},
+  year = {2026},
+  publisher = {Figshare},
+  doi = {10.6084/m9.figshare.33514507},
+  url = {[https://doi.org/10.6084/m9.figshare.33514507](https://doi.org/10.6084/m9.figshare.33514507)}
+}
