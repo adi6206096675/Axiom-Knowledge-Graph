@@ -27,6 +27,7 @@ If you utilize Axiom or its deterministic retrieval architecture in your researc
   url = {[https://doi.org/10.6084/m9.figshare.33514507](https://doi.org/10.6084/m9.figshare.33514507)}
 }
 
+
 ## 🏗️ System Architecture
 
 Axiom implements an asynchronous **producer-consumer backpressure model** designed for extreme stability, high throughput, and memory safety on local or constrained infrastructure:
