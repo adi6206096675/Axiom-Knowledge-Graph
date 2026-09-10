@@ -6,6 +6,7 @@
 [![Python](https://img.shields.io/badge/Refinery-Python-blue?style=flat-square&logo=python)](https://www.python.org/)
 [![Qdrant](https://img.shields.io/badge/Vector%20DB-Qdrant-red?style=flat-square)](https://qdrant.tech/)
 [![Redis](https://img.shields.io/badge/Buffer-Redis-darkred?style=flat-square&logo=redis)](https://redis.io/)
+[![DOI](https://img.shields.io/badge/DOI-10.6084/m9.figshare.33514507-blue.svg)]
 
 **Axiom** is an industrial-grade, crash-proof, hybrid neural search engine and knowledge graph pipeline engineered from the metal up. It combines the raw network execution velocity of **Rust** with state-of-the-art AI transformer models in **Python** to ingest, refine, and index millions of domain-specific semantic facts into a local vector space.
 
